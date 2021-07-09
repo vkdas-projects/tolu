@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Session 13</title>
+        <style>
+            body {
+                background-color: orangered;
+                color: whitesmoke;
+                text-align: center;
+                font-family: cursive;
+            }
+
+            fieldset {
+                padding: 30px;
+                color:whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Form and Input Attributes</h1>
+        <h2 style="color: teal;"><marquee>1. Action</marquee></h2>
+        <h2 style="color: palevioletred;"><marquee>2. Target</marquee></h2>
+        <h2 style="color:peachpuff;"><marquee>3. Method</marquee></h2>
+        <form action="https://www.google.com/" target="_blank" method="GET">
+            <fieldset>
+            <legend>Pet Details Form</legend>
+            <label for="animal">Type of Pet : </label>
+            <input minlength="2"  required placeholder="Dog/Cat/Bird" type="text"><br><br>
+            <label for="Location">Select Location : </label>
+            <input disabled list="location">
+            <datalist id="location">
+                <option value="India"></option>
+                <option value="UK"></option>
+                <option value="US"></option>
+            </datalist><br><br>
+            <label for="pets-name">Enter Your Pet's Name : </label>
+            <input autofocus maxlength="10" minlength="10" type="text"><br><br>
+            <label for="pets-age">Enter Your Pet's Age : </label>
+            <input type="text"><br><br>
+            <label for="gender">Select Your Pet's Gender : </label><br><br>
+            <label for="gender">Male</label><input name="gender" type="radio">
+            <label for="gender">Female</label><input name="gender" type="radio"><br><br>
+            <input type="submit" value="Submit Form">
+            </fieldset>
+        </form>
+    </body>
+</html>
