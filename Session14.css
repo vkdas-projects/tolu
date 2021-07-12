@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(238, 241, 245);
+    text-align: center;
+}
+
+.header {
+    margin-top: 40px;
+}
+
+.header h1 {
+    color: royalblue;
+    font-size: 50px;
+    margin-bottom: -15px;
+}
+
+.header p {
+    font-size: 28px;
+}
+
+.email , .password, .loginbtn {
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 350px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+}
+
+.loginbtn {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+form a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+form {
+    background-color: white;
+    padding: 20px
+}
+
+.createbtn {
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgb(115, 177, 53);
+    font-size: 16px;
+}
