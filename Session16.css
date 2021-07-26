@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(238, 241, 245);
+    text-align: center;
+}
+
+.header {
+    margin-top: 40px;
+}
+
+.header h1 {
+    color: royalblue;
+    font-size: 50px;
+    margin-bottom: -15px;
+}
+
+.header p {
+    font-size: 28px;
+}
+
+.email , .password, .loginbtn {
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 350px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.loginbtn {
+    background-color: rgb(38, 114, 228);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(212, 211, 211);
+}
+
+.createbtn {
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgb(53, 177, 53);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.forgot {
+    margin-top: 5px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 20px;
+}
+
+.page{
+    margin-top: 30px;
+}
