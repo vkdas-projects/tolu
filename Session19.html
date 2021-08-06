@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Session 19</title>
+        <style>
+            body {
+                background: linear-gradient(cyan,royalblue);
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            iframe {
+                width: 90%;
+                height: 500px;
+                border: 5px solid rgb(0, 0, 0);
+                margin-bottom: 10px;
+            }
+
+            img{
+                height: 300px;
+                width: 400px;
+                opacity: 0.5;
+            }
+
+            img:hover {
+                opacity: 1;
+
+            }
+
+            button {
+                padding: 10px;
+                transform: scale(1.2);
+                background-color: cornflowerblue;
+                color: white;
+                border: 2px solid white;
+                border-radius: 10px;
+                transition: 1s ease-in;
+              
+            }
+            button:hover{
+                transform: scale(1.5);
+                transform: rotate(180deg);
+                background-color: royalblue;
+                border-radius: 30px;
+                box-shadow: 1px 1px 5px rgb(17, 0, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Iframes, Opacity and Hover</h1>
+        <img src="football.jpg"><br><br>
+        <button>Click Me</button>
+        <h2>Wikipedia Website</h2>
+        <iframe src="https://en.wikipedia.org/wiki/Main_Page"></iframe>
+        <iframe src="Session16.html"></iframe>
+    </body>
+</html>
