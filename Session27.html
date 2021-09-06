@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Session 27</title>
+        <style>
+            body{
+                background-color: cyan;
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            input{
+                background-color: purple;
+                padding: 10px;
+                color: white;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Geolocation</h1>
+        <p id="show"></p>
+        <input type="button" value="Get Location" onclick="getLocation()">
+    </body>
+    <script>
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else{
+                var show = document.getElementById('show');
+                show.innerHTML = "Geolocation Not Found";
+            }
+        }
+
+        function showPosition(position){
+            var show = document.getElementById('show');
+            show.innerHTML = "Latitude = " +position.coords.latitude+ " Longitude = " +position.coords.longitude;
+        }
+    </script>
+</html>

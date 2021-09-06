@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Session 28</title>
+        <style>
+            body{
+                background-color:cadetblue;
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            input{
+                background-color: cyan;
+                padding: 10px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Storage</h1>
+        <h2>Local Storage & Session Storage</h2>
+        <p id="showloc"></p>
+        <p id="showsess"></p>
+        <input type="button" value="Local Storage" onclick="locStorage()">
+        <input type="button" value="Session Storage" onclick="sessStorage()">
+    </body>
+    <script>
+        function showText(){
+            var show = document.getElementById('show');
+            show.innerHTML = "Kenver";
+        }
+
+        function locStorage(){
+            if(typeof(Storage) !== "undefined"){
+                if(localStorage.clickCount){
+                    localStorage.clickCount = Number(localStorage.clickCount) +1;
+                }
+                else{
+                    localStorage.clickCount = 1;
+                }
+                var showloc = document.getElementById('showloc')
+                 showloc.innerHTML = "The Button has been clicked " +localStorage.clickCount+ " times";
+            }
+            else{
+                var showerror = document.getElementById('showerror');
+                showerror.innerHTML = "Your Browser Does Not Support Local Storage";
+            }
+        }
+
+        function sessStorage(){
+            if(typeof(Storage) !== "undefined"){
+                if(sessionStorage.clickCount){
+                    sessionStorage.clickCount = Number( sessionStorage.clickCount) +1;
+                }
+                else{
+                    sessionStorage.clickCount = 1;
+                }
+                var showsess = document.getElementById('showsess')
+                 showsess.innerHTML = "The Button has been clicked " + sessionStorage.clickCount+ " times";
+            }
+            else{
+                var showerror = document.getElementById('showerror');
+                showerror.innerHTML = "Your Browser Does Not Support Local Storage";
+            }
+        }
+    </script>
+</html>
